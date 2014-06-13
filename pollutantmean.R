@@ -19,5 +19,5 @@ pollutantmean <- function(directory, pollutant, id=1:332) {
   setwd("..")
   
   ## calculate mean
-  return(round(mean(dataset[, pollutant], na.rm=TRUE), digits=3))
+  return(mean(dataset[, pollutant], na.rm=TRUE))
 }
